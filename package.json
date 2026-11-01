@@ -1,0 +1,76 @@
+{
+  "name": "@wbc-ui/js",
+  "version": "3.0.0-rc.2",
+  "description": "A configuration-driven Vue 3 view runtime built on the WBC renderer",
+  "author": "Wissem Boughamoura",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "wbjs-create-view": "./bin/wbjs-create-view.mjs"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "types",
+    "CHANGELOG.md",
+    "COMPATIBILITY.md",
+    "MIGRATION.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm run build",
+    "check:dist": "node tools/check_dist_freshness.mjs"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.5"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0",
+    "@wbc-ui/core": "^3.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^2.4.6",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "eslint": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbc-ui/js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wbc-ui/js/issues"
+  },
+  "homepage": "https://github.com/wbc-ui/js#readme",
+  "keywords": [
+    "wbc",
+    "ui3",
+    "vue3",
+    "configuration-driven-ui",
+    "server-driven-ui",
+    "view-runtime",
+    "wbgc"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  }
+}
