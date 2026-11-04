@@ -3,7 +3,7 @@
 | Surface | Supported contract |
 |---|---|
 | Vue | `^3.5.0` |
-| `@wbc-ui/core` | `^3.0.0-rc.1` for this prerelease line |
+| `@wbc-ui/core` | `^3.0.0-rc.3` for this prerelease line |
 | Modules | ESM and CommonJS library consumers |
 | Bundlers | Vite 6; other Vue 3 bundlers may use explicit `viewData` |
 | Browsers | Current Chromium and Firefox release lines (automated); Safari requires application-level validation |

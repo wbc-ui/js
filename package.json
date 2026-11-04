@@ -1,6 +1,6 @@
 {
   "name": "@wbc-ui/js",
-  "version": "3.0.0-rc.2",
+  "version": "3.0.0-rc.3",
   "description": "A configuration-driven Vue 3 view runtime built on the WBC renderer",
   "author": "Wissem Boughamoura",
   "license": "MIT",
@@ -17,7 +17,7 @@
     }
   },
   "bin": {
-    "wbjs-create-view": "./bin/wbjs-create-view.mjs"
+    "wbjs-create-view": "bin/wbjs-create-view.mjs"
   },
   "files": [
     "bin",
@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "vue": "^3.5.0",
-    "@wbc-ui/core": "^3.0.0-rc.1"
+    "@wbc-ui/core": "^3.0.0-rc.3"
   },
   "devDependencies": {
     "@vue/test-utils": "^2.4.6",

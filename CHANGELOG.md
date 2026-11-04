@@ -2,6 +2,12 @@
 
 All notable changes follow Keep a Changelog. This package uses semantic versioning.
 
+## 3.0.0-rc.3
+
+### Changed
+
+- Coordinated WBC v3 release-candidate alignment and refreshed public documentation.
+
 ## 3.0.0-rc.2
 
 ### Changed
